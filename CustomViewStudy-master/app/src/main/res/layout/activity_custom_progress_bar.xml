@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progressBar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_progress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jingbin.customview.activity.CustomProgressBarActivity">
+
+    <com.example.jingbin.customview.view.CustomProgressBar
+        android:id="@+id/custom_progress_bar_01"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        progressBar:circleWidth="30dp"
+        progressBar:firstColor="@color/colorPrimary"
+        progressBar:secondColor="@color/colorAccent"
+        progressBar:speed="10" />
+
+    <com.example.jingbin.customview.view.CustomProgressBar
+        android:id="@+id/custom_progress_bar_02"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        progressBar:circleWidth="30dp"
+        progressBar:firstColor="#00CC00"
+        progressBar:secondColor="#FF9900"
+        progressBar:speed="12" />
+
+
+</LinearLayout>
