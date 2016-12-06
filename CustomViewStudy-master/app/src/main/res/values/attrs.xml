@@ -60,4 +60,14 @@
         <attr name="vBg" />
 
     </declare-styleable>
+
+    <attr name="mBg" format="reference" />
+    <attr name="mFirstColor" format="color"/>
+    <attr name="mSecondColor" format="color"/>
+
+    <declare-styleable name="LightningView">
+        <attr name="mBg"/>
+        <attr name="mFirstColor"/>
+        <attr name="mSecondColor"/>
+    </declare-styleable>
 </resources>

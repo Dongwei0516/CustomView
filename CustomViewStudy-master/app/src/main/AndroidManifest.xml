@@ -52,6 +52,9 @@
         <activity android:name=".activity.NineImgActivity"/>
         <activity android:name=".activity.CircleImageView"/>
         <activity android:name=".activity.ZoomImageActivity"/>
+        <activity android:name=".activity.CircularChartActivity"/>
+        <activity android:name=".activity.CircleActivity"/>
+        <activity android:name=".activity.ChartsActivity"/>
     </application>
 
 </manifest>

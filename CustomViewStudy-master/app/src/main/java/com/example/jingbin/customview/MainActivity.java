@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.jingbin.customview.activity.ChartsActivity;
+import com.example.jingbin.customview.activity.CircleActivity;
 import com.example.jingbin.customview.activity.CircleImageView;
+import com.example.jingbin.customview.activity.CircularChartActivity;
 import com.example.jingbin.customview.activity.CustomImageViewActivity;
 import com.example.jingbin.customview.activity.CustomImgContainerActivity;
 import com.example.jingbin.customview.activity.CustomProgressBarActivity;
-import com.example.jingbin.customview.activity.CustomTitleViewActivity;
 import com.example.jingbin.customview.activity.CustomVolumControlBarActivity;
 import com.example.jingbin.customview.activity.NineImgActivity;
 import com.example.jingbin.customview.activity.PathActivity;
@@ -28,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        findViewById(R.id.bt_custom_view_01).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_02).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_03).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_04).setOnClickListener(this);
@@ -39,14 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.bt_custom_view_10).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_11).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_12).setOnClickListener(this);
+        findViewById(R.id.bt_custom_view_13).setOnClickListener(this);
+        findViewById(R.id.bt_custom_view_14).setOnClickListener(this);
+        findViewById(R.id.bt_custom_view_15).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.bt_custom_view_01:// 点击更换数字
-                startActivity(new Intent(v.getContext(), CustomTitleViewActivity.class));
-                break;
             case R.id.bt_custom_view_02:// 图文搭配
                 startActivity(new Intent(v.getContext(), CustomImageViewActivity.class));
                 break;
@@ -77,6 +78,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_custom_view_12:
                 startActivity(new Intent(v.getContext(), ZoomImageActivity.class));
+                break;
+            case R.id.bt_custom_view_13:
+                startActivity(new Intent(v.getContext(), CircularChartActivity.class));
+                break;
+            case R.id.bt_custom_view_14:
+                startActivity(new Intent(v.getContext(), CircleActivity.class));
+                break;
+            case R.id.bt_custom_view_15:
+                startActivity(new Intent(v.getContext(), ChartsActivity.class));
             default:
                 break;
         }

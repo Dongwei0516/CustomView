@@ -87,7 +87,6 @@ public class ZoomImageView extends ImageView implements ScaleGestureDetector.OnS
         getViewTreeObserver().addOnGlobalLayoutListener(this);
     }
 
-
     @Override
     protected void onDetachedFromWindow(){
         super.onDetachedFromWindow();

@@ -17,12 +17,6 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/bt_custom_view_01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="自定义View (一)" />
-
-        <Button
             android:id="@+id/bt_custom_view_02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,6 +74,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ZoomImageView️" />
+
+        <Button
+            android:id="@+id/bt_custom_view_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circular chart" />
+
+        <Button
+            android:id="@+id/bt_custom_view_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CircleRotate" />
+
+        <Button
+            android:id="@+id/bt_custom_view_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charts" />
 
 
     </LinearLayout>
