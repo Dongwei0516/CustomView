@@ -91,7 +91,52 @@
             android:id="@+id/bt_custom_view_15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Charts" />
+            android:text="Circle2" />
+
+
+
+        <Button
+            android:id="@+id/bt_custom_view_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="☯☯️☯☯️☯☯️️☯️" />
+
+        <Button
+            android:id="@+id/bt_custom_view_19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AnimatorBall️" />
+
+        <Button
+            android:id="@+id/bt_custom_view_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BezierView" />
+
+        <Button
+            android:id="@+id/bt_custom_view_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arrow" />
+
+        <Button
+            android:id="@+id/bt_custom_view_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading" />
+
+        <Button
+            android:id="@+id/bt_custom_view_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NumberAnimator" />
+
+        <Button
+            android:id="@+id/bt_custom_view_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Graphs" />
+
 
 
     </LinearLayout>

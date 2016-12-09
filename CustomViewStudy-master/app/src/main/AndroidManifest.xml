@@ -55,6 +55,13 @@
         <activity android:name=".activity.CircularChartActivity"/>
         <activity android:name=".activity.CircleActivity"/>
         <activity android:name=".activity.ChartsActivity"/>
+        <activity android:name=".activity.ArrowActivity"/>
+        <activity android:name=".activity.LoadingActivity"/>
+        <activity android:name=".activity.Taiji2Activity"/>
+        <activity android:name=".activity.AnimatorBallActivity"/>
+        <activity android:name=".activity.BezierViewActivity"/>
+        <activity android:name=".activity.NumberAnimatorActivity"/>
+        <activity android:name=".activity.GraphsActivity"/>
     </application>
 
 </manifest>

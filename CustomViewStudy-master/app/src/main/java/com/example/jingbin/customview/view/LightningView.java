@@ -24,10 +24,10 @@ public class LightningView extends View {
     private float mRadius2 = 250;
     private float mRadius3 = 200;
     private float mCircleWidth = 50;
-    private Paint mPaint1;
-    private Paint mPaint2;
-    private Paint mPaint3;
-    private Paint mPaint4;
+    private Paint mBottomPaint;
+    private Paint mBackgroundPaint;
+    private Paint mLinePaint;
+    private Paint mFillPaint;
     private Path mPath;
     private Path mPath2;
     private Path mPath3;
@@ -64,39 +64,40 @@ public class LightningView extends View {
         canvas.translate( mWidth/2 - mRadius, mHeight/2 - mRadius);
         initPaint();
         bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.lightning);
-        canvas.drawCircle(mRadius, mRadius, mRadius ,mPaint1);
+        canvas.drawCircle(mRadius, mRadius, mRadius ,mBottomPaint);
 //        drawCycle(canvas);
         drawLines(canvas);
         drawLines2(canvas);
         drawLines3(canvas);
 //        drawCycle2(canvas);
-        canvas.drawBitmap(bitmap, null, mRect, mPaint1);
+        canvas.drawBitmap(bitmap, null, mRect, mBottomPaint);
     }
 
     private void initPaint(){
-        mPaint1 = new Paint();
-        mPaint1.setAntiAlias(true);
-        mPaint1.setStyle(Paint.Style.STROKE);
-        mPaint1.setStrokeWidth(mCircleWidth);
-        mPaint1.setColor(Color.parseColor("#FFC1C1"));
+        mBottomPaint = new Paint();
+        mBottomPaint.setAntiAlias(true);
+        mBottomPaint.setStyle(Paint.Style.STROKE);
+        mBottomPaint.setStrokeWidth(mCircleWidth);
+        mBottomPaint.setColor(Color.parseColor("#FFC1C1"));
 
-        mPaint2 = new Paint();
-        mPaint2.setAntiAlias(true);
-        mPaint2.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint2.setStrokeWidth(4);
-        mPaint2.setColor(Color.parseColor("#FFFFFF"));
+        mBackgroundPaint = new Paint();
+        mBackgroundPaint.setAntiAlias(true);
+        mBackgroundPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+        mBackgroundPaint.setStrokeWidth(4);
+        mBackgroundPaint.setColor(Color.parseColor("#FFFFFF"));
 
-        mPaint3 = new Paint();
-        mPaint3.setAntiAlias(true);
-        mPaint3.setStyle(Paint.Style.FILL_AND_STROKE);
-        mPaint3.setStrokeWidth(4);
-        mPaint3.setColor(Color.parseColor("#EE6363"));
 
-        mPaint4 = new Paint();
-        mPaint4.setAntiAlias(true);
-        mPaint4.setColor(Color.parseColor("#EE6363"));
-        mPaint4.setStrokeWidth(4);
-        mPaint4.setStyle(Paint.Style.STROKE);
+        mFillPaint = new Paint();
+        mFillPaint.setAntiAlias(true);
+        mFillPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+        mFillPaint.setStrokeWidth(4);
+        mFillPaint.setColor(Color.parseColor("#EE6363"));
+
+        mLinePaint = new Paint();
+        mLinePaint.setAntiAlias(true);
+        mLinePaint.setColor(Color.parseColor("#EE6363"));
+        mLinePaint.setStrokeWidth(4);
+        mLinePaint.setStyle(Paint.Style.STROKE);
 
         mRect = new Rect();
         mRect.left = (int) (mRadius - Math.sqrt(2)/2*mRadius);
@@ -125,8 +126,9 @@ public class LightningView extends View {
                     startPercent,sweepPercent);
             mPath2.lineTo(mRadius,mRadius);
             mPath2.close();
+
             mPath.op(mPath2, Path.Op.DIFFERENCE);
-            canvas.drawPath(mPath,mPaint2);
+            canvas.drawPath(mPath,mBackgroundPaint);
         }
     }
 
@@ -167,7 +169,7 @@ public class LightningView extends View {
             mPath.lineTo(startX2,startY2);
             mPath.close();
             mPath.setFillType(Path.FillType.WINDING);
-            canvas.drawPath(mPath,mPaint4);
+            canvas.drawPath(mPath,mLinePaint);
         }
     }
 
@@ -194,7 +196,7 @@ public class LightningView extends View {
             mPath2.lineTo(mRadius,mRadius);
             mPath2.close();
             mPath.op(mPath2, Path.Op.DIFFERENCE);
-            canvas.drawPath(mPath,mPaint3);
+            canvas.drawPath(mPath,mFillPaint);
         }
         float startPercent2 = (273 + m*45)%360;
         float sweepPercent2 = n - 3;
@@ -210,7 +212,7 @@ public class LightningView extends View {
         mPath4.lineTo(mRadius, mRadius);
         mPath4.close();
         mPath3.op(mPath4, Path.Op.DIFFERENCE);
-        canvas.drawPath(mPath3,mPaint3);
+        canvas.drawPath(mPath3,mFillPaint);
     }
 
 }

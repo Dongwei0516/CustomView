@@ -70,4 +70,8 @@
         <attr name="mFirstColor"/>
         <attr name="mSecondColor"/>
     </declare-styleable>
+
+    <declare-styleable name="ArrowView">
+        <attr name="aBg" format="reference" />
+    </declare-styleable>
 </resources>
