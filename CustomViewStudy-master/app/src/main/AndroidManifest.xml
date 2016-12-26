@@ -62,6 +62,7 @@
         <activity android:name=".activity.BezierViewActivity"/>
         <activity android:name=".activity.NumberAnimatorActivity"/>
         <activity android:name=".activity.GraphsActivity"/>
+        <activity android:name=".activity.AnimatorActivity"/>
     </application>
 
 </manifest>

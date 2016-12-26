@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.1.1_b2128598eee73a92ef53055ec48e1908b73d3677.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.1.1_9bce88a212845e527943eda9d8d156f078476dda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_a7ccef77b81a81564b16dea77f7c14cdf7ca3b2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_4043caa3d8926274ecf283b9f5db0e23a4c82ddd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_2598e03ee2b121b7f78d25dc0bad93b7b0a2ffdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.1.1_124fc1c794468a4a4f5a07a22929b1296d5f6cd8.jar" />
+    </item>
+
+</items>

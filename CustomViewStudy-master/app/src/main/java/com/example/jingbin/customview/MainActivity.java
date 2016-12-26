@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.jingbin.customview.activity.AnimatorActivity;
 import com.example.jingbin.customview.activity.AnimatorBallActivity;
 import com.example.jingbin.customview.activity.ArrowActivity;
+import com.example.jingbin.customview.activity.BezierViewActivity;
 import com.example.jingbin.customview.activity.ChartsActivity;
 import com.example.jingbin.customview.activity.CircleActivity;
 import com.example.jingbin.customview.activity.CircleImageView;
 import com.example.jingbin.customview.activity.CircularChartActivity;
-import com.example.jingbin.customview.activity.CustomImageViewActivity;
 import com.example.jingbin.customview.activity.CustomImgContainerActivity;
 import com.example.jingbin.customview.activity.CustomProgressBarActivity;
 import com.example.jingbin.customview.activity.CustomVolumControlBarActivity;
@@ -20,7 +21,6 @@ import com.example.jingbin.customview.activity.LoadingActivity;
 import com.example.jingbin.customview.activity.NineImgActivity;
 import com.example.jingbin.customview.activity.NumberAnimatorActivity;
 import com.example.jingbin.customview.activity.PathActivity;
-import com.example.jingbin.customview.activity.BezierViewActivity;
 import com.example.jingbin.customview.activity.Taiji2Activity;
 import com.example.jingbin.customview.activity.TaijiActivity;
 import com.example.jingbin.customview.activity.VDHDeepLayoutActivity;
@@ -57,13 +57,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.bt_custom_view_20).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_21).setOnClickListener(this);
         findViewById(R.id.bt_custom_view_22).setOnClickListener(this);
+        findViewById(R.id.bt_custom_view_23).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_custom_view_02:// 图文搭配
-                startActivity(new Intent(v.getContext(), CustomImageViewActivity.class));
+                startActivity(new Intent(v.getContext(), AnimatorActivity.class));
                 break;
             case R.id.bt_custom_view_03:// 自定义圆形进度条
                 startActivity(new Intent(v.getContext(), CustomProgressBarActivity.class));
@@ -122,6 +123,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_custom_view_22:
                 startActivity(new Intent(v.getContext(), GraphsActivity.class));
+                break;
+            case R.id.bt_custom_view_23:
+                startActivity(new Intent(v.getContext(), AnimatorActivity.class));
             default:
                 break;
         }

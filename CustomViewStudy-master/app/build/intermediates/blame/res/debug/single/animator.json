@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/res/merged/debug/animator/taiji.xml",
+        "source": "/Users/dongwei/Downloads/CustomViewStudy-master/app/src/main/res/animator/taiji.xml"
+    },
+    {
+        "merged": "/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/res/merged/debug/animator/scale.xml",
+        "source": "/Users/dongwei/Downloads/CustomViewStudy-master/app/src/main/res/animator/scale.xml"
+    },
+    {
+        "merged": "/Users/dongwei/Downloads/CustomViewStudy-master/app/build/intermediates/res/merged/debug/animator/rotate.xml",
+        "source": "/Users/dongwei/Downloads/CustomViewStudy-master/app/src/main/res/animator/rotate.xml"
+    }
+]
